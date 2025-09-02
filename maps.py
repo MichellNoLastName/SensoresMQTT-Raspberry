@@ -10,7 +10,7 @@ class Maps:
         params = {'sensor': 'false'}
         coordenadas = self.latitud + ", " + self.longitud
         params["latlng"] = coordenadas
-        params["key"] = "AIzaSyAUPYJTHUnBPHHg-daNU8clg1IOyJf6qDg"
+        params["key"] = "API-KEY"
         r = requests.get(url, params=params)
         results = r.json()['results']
         location = results[0]["formatted_address"]
